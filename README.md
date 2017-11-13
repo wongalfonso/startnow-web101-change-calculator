@@ -1,0 +1,1 @@
+This is a simple change calculator that takes the amount that is due, subtracts the money taken from the customer and returns the amount that needs to be returned to the customer. 

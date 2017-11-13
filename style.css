@@ -1,0 +1,184 @@
+h1 {
+    text-align: center;
+
+}
+
+body {
+    background-color:white;
+}
+/*********Top Column**************/
+#top-border {
+    margin-top: 1.5em;
+    border-radius: 8px;
+    background-color: lightgrey;
+    border: grey solid;
+    height: 6em;
+    
+}
+#calculate-change {
+    position: relative;
+    bottom: -1.7em;
+}
+
+#clear-btn {
+    position: relative;
+    bottom: -1.7em;
+}
+.images {
+    position: relative;
+    bottom: -.5em;
+}
+/*********Second Column ************/
+
+#first-output {
+    border-radius:8px;
+    background-color: lightgrey;
+    border: grey solid;
+    height: 18em;
+    margin-top: 1.5em;
+    padding-top: .8em;
+
+}
+
+#message-output {
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    top: 15px;
+    left: 15px;
+    font-weight: bold;
+    color: green;
+}
+#money-output {
+    position: relative;
+    bottom: -1em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    left: 15px;
+    font-weight: bold;
+    color: green;
+}
+
+.dollars-label {
+    position:relative;
+    font-size: 30px;
+    text-align: center;
+}
+
+.dollars-output {
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+}
+#dollars-output, #dollars-label {
+    color: green;
+}
+
+/*********Thrid Column ************/
+#second-output {
+    border-radius:8px;
+    background-color: lightgrey;
+    border: grey solid;
+    height: 11em;
+    margin-top: 2em;
+}
+
+.outputs {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    line-height: 2em;
+
+}
+#change-label { 
+    position: relative;
+    bottom: -1em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    left: 15px;
+    font-weight: bold;
+    color: green;
+}
+#change-output { 
+    position: relative;
+    bottom: -1em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    left: 15px;
+    font-weight: bold;
+    color: green;
+}
+
+
+/*********************************Media Query***********************/
+
+@media (max-width: 992px) {
+
+
+
+/******************Top Column**************/
+    #top-border {
+        height: 18em;
+    }
+    #calculate-change {
+        bottom: 0em;
+    }
+    #clear-btn {
+        bottom: 0em;
+    }
+
+/******************Second Column**************/
+
+    #first-output {
+        height: 68em;
+        position: relative;
+    }
+    #message-output { 
+        bottom: -1em;
+        font-size: 30px;
+        left: 0;
+        position: relative;
+        padding-bottom: 1em;
+    }
+    #five, #ten, #twenty{
+        top: 8em;
+        
+
+    }
+    #money-output { 
+        top: -12em;
+        font-size: 30px;
+        left: 0px;
+        position: relative;
+        padding-bottom: 1em;
+    }
+    #message {
+        margin-bottom: 2em;
+    }
+    /* .dollars-label, .dollars-output {
+        bottom: em;
+        position: relative;
+
+        
+    } */
+
+
+/******************Third Column**************/
+    #second-output {
+        height: 52em;
+    }
+    .outputs, .labels {
+        line-height: 1.5em;
+        bottom: -.5em;
+    }
+    #change-group {
+        padding-top: 2em;
+    }
+    .images {
+        width: 50%;
+    }
+   
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha383-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg3Va+PmSTsz/K68vbdEjh3u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Change Calculator</title>
+</head>
+
+<body>
+  <h1>Change Calculator</h1>
+
+  <div class="container">
+
+    <form>
+      <div class="row">
+        <div id="top-border">
+          <!-- amount due -->
+          <div class="form-group col-xs-12 col-md-4">
+            <label for="amount-due" class="control-label">How much is due for this sale?</label>
+            <input type="text" id="amount-due" class="form-control clear-in">
+          </div>
+          <!-- amount received -->
+          <div class="form-group col-xs-12 col-md-4">
+            <label for="amount-received" class="control-label">How much has the customer given you?</label>
+            <input type="text" id="amount-received" class="form-control clear-in">
+          </div>
+          <!--Button -->
+          <div class="form-group col-xs-12 col-md-2">
+            <button class="btn btn-primary btn-block" id="calculate-change" type="reset" value="0">Calculate</button>
+          </div>
+          <!-- Clear Button -->
+          <div class="form-group col-xs-12 col-md-2">
+            <button class="btn btn-success btn-block" id="clear-btn" type="reset" value="0">Clear</button>
+          </div>
+        </div>
+        <!--border-->
+      </div>
+      <!-- row -->
+    </form>
+
+
+
+<!--Message -->
+    <form class="form-inline">
+
+      <div class="row">
+        <div id="first-output">
+<!--Top Middle Row-->
+          <div class="row" id="top-middle-column">
+            <div class="form-group col-xs-12 col-md-3 " id="message">
+              <p id="message-output" class="clear-in">
+                <b>-</b>
+              </p>
+            </div>
+<!--20 Dollars -->
+            <div class="form-group col-xs-12 col-md-3" id="twenty">
+              <p>
+                <image src="../images/$20.jpg" style="width:120px;height:50px;" class="images center-block">
+              </p>
+              <p id="20dollars-output twenty" class="dollars-output clear">$0</p>
+            </div>
+<!--10 Dollars -->
+            <div class="form-group col-xs-12 col-md-3" id="ten">
+              <p>
+                <image src="../images/$10.jpg" style="width:120px;height:50px;" class="images center-block">
+              </p>
+              <p id="10dollars-output" class="dollars-output clear">$0</p>
+            </div>
+<!--5 Dollars -->
+            <div class="form-group col-xs-12 col-md-3" id="five">
+              <p>
+                <image src="../images/$5.jpeg" style="width:120px;height:50px;" class="images center-block">
+              </p>
+              <p id="5dollars-output" class="dollars-output clear">$0</p>
+            </div>
+          </div><!-- first row-->
+<!--Second Row-->
+          <div class="row" id="bottom-middle-column">
+<!--Money Output -->
+            <div class="form-group col-xs-12 col-md-3">
+                <p id="money-output" class="clear">
+                    <b>$0</b>
+                  </p>
+
+            </div>
+<!--2 Dollars -->
+            <div class="form-group col-xs-12 col-md-3">
+              <p>
+                <image src="../images/$2.jpeg" style="width:120px;height:50px;" class="images center-block">
+              </p>
+              <p id="2dollars-output" class="dollars-output clear">$0</p>
+            </div>
+<!--1 Dollar -->
+            <div class="form-group col-xs-12 col-md-3">
+              <p>
+                <image src="../images/$1.jpg" style="width:120px;height:50px;" class="images center-block">
+              </p>
+              <p id="1dollars-output" class="dollars-output clear">$0</p>
+            </div>
+<!--Total Dollars -->
+            <div class="form-group col-xs-12 col-md-3">
+              <p id="dollars-label" class="dollars-label" for="dollars-output ">
+                <b>Total Dollars</b>
+              </p>
+              <p id="dollars-output" class="dollars-output clear">$0</p>
+            </div>
+          </div><!-- Second row-->
+        </div><!--Output Group-->
+      </div><!--Main Row-->
+    </form>
+
+
+
+<!--Quarters -->
+    <form class="form-inline">
+
+      <div class="row">
+        <div id="second-output">
+          <div class="form-group col-xs-12 col-md-3" id="change-group">
+            <p>
+              <image src="../images/25c.png" style="width:60px;height:60px;" class="images center-block">
+            </p>
+            <p id="quarters-output" class="outputs clear">0</p>
+          </div>
+<!--Dimes -->
+          <div class="form-group col-xs-12 col-md-2">
+            <p>
+              <image src="../images/dime.jpg" style="width:60px;height:60px;" class="images center-block">
+            </p>
+            <p id="dimes-output" class="outputs clear">0</p>
+          </div>
+<!--Nickles -->
+          <div class="form-group col-xs-12 col-md-2">
+            <p>
+              <image src="../images/nickel.jpg" style="width:60px;height:60px;" class="images center-block">
+            </p>
+            <p id="nickels-output" class="outputs clear">0</p>
+          </div>
+<!--Pennies -->
+          <div class="form-group col-xs-12 col-md-2">
+            <p>
+              <image src="../images/penny.png" style="width:60px;height:60px;" class="images center-block">
+            </p>
+            <p id="pennies-output" class="outputs clear">0</p>
+          </div>
+<!--Change Output -->
+          <div class="form-group col-xs-12 col-md-3">
+              <p id="change-label" class="dollars-label" for="change-output ">
+                  <b>Total Change</b>
+                </p>
+                <p id="change-output" class="change-output clear">0¢</p>
+            </div>
+        </div><!--Group Div-->
+      </div><!--row-->
+    </form>
+  </div><!--container-->
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

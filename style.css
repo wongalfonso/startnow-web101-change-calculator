@@ -1,11 +1,29 @@
-h1 {
-    text-align: center;
-
+header {
+    top: 0;
+    margin: 0;
+    background-color: lightgrey;
+    height: 100px;
+    border-top: solid darkgrey;
+    border-bottom: solid darkgrey;
+    
 }
-
 body {
     background-color:white;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+
 /*********Top Column**************/
 #top-border {
     margin-top: 1.5em;
@@ -111,6 +129,8 @@ body {
     font-weight: bold;
     color: green;
 }
+
+
 
 
 /*********************************Media Query***********************/
